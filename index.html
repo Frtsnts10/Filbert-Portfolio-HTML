@@ -4,26 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
     />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    /> -->
 
     <title>Personal Portfolio</title>
-  </head>
-  <body>
-    <nav>
+    <nav id="nav">
       <div class="nav-logo">
         <a href="#">
           <img
             id="darkModeLogo"
             src="images/logo-white.jpg"
+            alt="Logo"
             style="display: none"
           />
         </a>
@@ -33,29 +27,30 @@
       </div>
 
       <ul class="nav-links">
-        <li class="link"><a href="#">Home</a></li>
-        <li id="link1" class="link"><a href="#">Features</a></li>
-        <li id="link2" class="link"><a href="#">Pricing</a></li>
-        <li id="link3" class="link"><a href="/Pages/About.html">About</a></li>
+        <li id="link1" class="link"><a href="#about">About</a></li>
+        <li id="link2" class="link"><a href="#experience">Experience</a></li>
+        <li id="link3" class="link"><a href="#projects">Projects</a></li>
+        <li id="link4" class="link"><a href="#contact">Contact</a></li>
       </ul>
 
-      <div>
-        <i class="toggle-btn ri-contrast-2-fill" id="toggleModeButton"></i>
-        <button class="btn">Hire Me</button>
-      </div>
+      <!-- <div>
+        <i class="toggle-btn ri-contrast-2-fill" id="toggleThemeButton"></i>
+        <button class="hire-btn">Hire Me</button>
+      </div> -->
     </nav>
-
-    <header class="container">
-      <div class="content">
+  </head>
+  <body>
+    <header id="home">
+      <div class="header-container">
         <span class="blur"></span>
         <span class="blur"></span>
 
-        <h4>CREATE YOUR SITE LIKE A PRO</h4>
+        <!-- <h4>CREATE YOUR SITE LIKE A PRO</h4> -->
         <h1>Hi, I'm <span class="name">Filbert</span>,</h1>
-        <span class="job">Web Developer</span>
+        <span class="jobs">Web Developer</span>
 
         <script>
-          const text = document.querySelector(".job");
+          const text = document.querySelector(".jobs");
 
           const textLoad = () => {
             setTimeout(() => {
@@ -65,7 +60,7 @@
               text.textContent = "Translator";
             }, 4000);
             setTimeout(() => {
-              text.textContent = "IT Support";
+              text.textContent = "Support";
             }, 8000);
             setTimeout(() => {
               text.textContent = "Content Writer";
@@ -76,14 +71,18 @@
           setInterval(textLoad, 16000);
         </script>
 
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nobis
-          temporibus odit! Libero exercitationem recusandae vitae quisquam,
-          perferendis, harum deleniti nesciunt assumenda architecto obcaecati
-          corporis ut aperiam dolor natus fuga.
-        </p>
+        <div class="text-container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+            reprehenderit et laborum, rem, dolore eum quod voluptate
+            exercitationem nobis, nihil esse debitis maxime facere minus sint
+            delectus velit in eos quo officiis explicabo deleniti dignissimos.
+            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+            reiciendis ea magnam? Nulla, impedit fuga!
+          </p>
+        </div>
 
-        <button class="btn">Get Started</button>
+        <button class="start-btn" onclick="location.href='./#about'">Get Started</button>
       </div>
 
       <div class="image">
@@ -91,172 +90,315 @@
       </div>
     </header>
 
-    <section class="container">
-      <h2 class="header">OUR FEATURES</h2>
-      <div class="features">
-        <div class="card">
-          <span><i class="ri-money-dollar-circle-line"></i></span>
-          <h4>Free Tutorials</h4>
-          <p>My tutorials in my channel</p>
-          <a href="#">Join Now <i class="ri-arrow-right-double-fill"></i> </a>
+    <section id="about" class="container">
+      <h4 class="title">Get To Know More</h4>
+      <h1 class="title">About Me</h1>
+
+      <div class="about-container">
+        <div class="section__pic-container">
+          <img
+            src="/images/profile.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="card">
-          <span><i class="ri-bug-2-line"></i></span>
-          <h4>Fix Your Bugs</h4>
-          <p>Have any problem on your code?</p>
-          <a href="#">Join Now <i class="ri-arrow-right-double-fill"></i> </a>
-        </div>
-        <div class="card">
-          <span><i class="ri-history-line"></i></span>
-          <h4>Free Tutorials</h4>
-          <p>My tutorials in my channel</p>
-          <a href="#">Join Now <i class="ri-arrow-right-double-fill"></i> </a>
-        </div>
-        <div class="card">
-          <span><i class="ri-money-dollar-circle-line"></i></span>
-          <h4>Free Tutorials</h4>
-          <p>My tutorials in my channel</p>
-          <a href="#">Join Now <i class="ri-arrow-right-double-fill"></i> </a>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+
+              <h3>Experiences</h3>
+              <p>
+                1+ years <br />Administration, IT Support <br />
+                Front End Dev, Financial Consultant
+              </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+
+              <h3>Educations</h3>
+              <p>
+                B.Sc. Bachelors Degree <br />Tarumanagara University <br />
+                2018 - 2022
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
         </div>
       </div>
+
+      <img
+        src="./assets/icon-down.png"
+        alt="Arrow icon"
+        class="icon-arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
 
-    <section class="container">
-      <h2 class="header">PROJECT PRICING PLANS</h2>
-      <p class="sub-header">
-        Our pricing plans are very affordable. You can choose any plan according
-        to your budget.
-      </p>
-      <div class="pricing">
-        <div class="card">
-          <div class="content">
-            <h4>Basic Plan</h4>
-            <h3>Rp. 0</h3>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
+    <section id="experience" class="container">
+      <h4 class="title">Explore My</h4>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-container">
+        <div class="experience-details-container">
+          <h2 class="sub-title">Frontend Development</h2>
+
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">HTML</h3>
+                <p class="ability">Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">CSS</h3>
+                <p class="ability">Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">React JS</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">React Native</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">Flutter</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program"></h3>
+                <p class="ability"></p>
+              </div>
+            </article>
           </div>
-          <button class="btn">Join Now</button>
         </div>
-        <div class="card">
-          <div class="content">
-            <h4>Basic Plan</h4>
-            <h3>Rp. 0</h3>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
+
+        <div class="experience-details-container">
+          <h2 class="sub-title">Backend Development</h2>
+
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">MySQL</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">NodeJS</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">Git</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program"></h3>
+                <p class="ability"></p>
+              </div>
+            </article>
           </div>
-          <button class="btn">Join Now</button>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h4>Basic Plan</h4>
-            <h3>Rp. 0</h3>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-          </div>
-          <button class="btn">Join Now</button>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h4>Basic Plan</h4>
-            <h3>Rp. 0</h3>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-            <p>
-              <i class="ri-check-line"></i>
-              Smart Coding Plan
-            </p>
-          </div>
-          <button class="btn">Join Now</button>
         </div>
       </div>
+
+      <img
+        src="./assets/icon-down.png"
+        alt="Arrow icon"
+        class="icon-arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
 
-    <footer class="container">
-      <span class="blur"></span>
-      <span class="blur"></span>
-      <div class="column">
-        <div class="logo">
-          <img src="images/logo-white.jpg" />
+    <section id="projects" class="container">
+      <h4 class="title">Browse My Recent</h4>
+      <h1 class="title">Projects</h1>
+
+      <div class="project-container">
+
+        <div class="project-details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+
+          <h2 class="project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="visit-btn btn-color-2 project-btn">Github</button>
+            <button class="visit-btn btn-color-2 project-btn">Live Demo</button>
+          </div>
         </div>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quasi
-          porro aut excepturi quaerat praesentium, adipisci veniam, consectetur
-          commodi, ipsam alias ea sit placeat voluptate nulla nisi et mollitia
-          itaque!
-        </p>
-        <div class="socials">
-          <a href="#"><i class="ri-instagram-line"></i></a>
-          <a href="#"><i class="ri-linkedin-line"></i></a>
-          <a href="#"><i class="ri-record-mail-line"></i></a>
+        <div class="project-details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-2.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="visit-btn btn-color-2 project-btn">Github</button>
+            <button class="visit-btn btn-color-2 project-btn">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="project-details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="visit-btn btn-color-2 project-btn">Github</button>
+            <button class="visit-btn btn-color-2 project-btn">Live Demo</button>
+          </div>
+        </div>
+
+        <img src="./assets/icon-right.png" alt="Next icon" class="icon-next">
+      </div>
+
+      <img
+        src="./assets/icon-down.png"
+        alt="Arrow icon"
+        class="icon-arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact" class="contact-content">
+      <h4 class="title">Get in Touch !</h4>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/gmail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:Filbert10.work@gmail.com"
+              >Filbert10.work@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/frtsnts10/">LinkedIn</a></p>
         </div>
       </div>
 
-      <div class="column">
-        <h4>Company</h4>
-        <a href="#">Business</a>
-        <a href="#">partnership</a>
-        <a href="#">Network</a>
-      </div>
-
-      <div class="column">
-        <h4>About Us</h4>
-        <a href="#">Business</a>
-        <a href="#">partnership</a>
-        <a href="#">Network</a>
-      </div>
-
-      <div class="column">
-        <h4>Contact</h4>
-        <a href="#">Business</a>
-        <a href="#">partnership</a>
-        <a href="#">Network</a>
-      </div>
-    </footer>
+      <img
+        src="./assets/icon-up.png"
+        alt="Arrow icon"
+        class="icon-arrow-outside"
+        onclick="location.href='./#nav'"
+      />
+    </section>
 
     <div class="copyright">
       Copyright @ 2023 Filbert Portfolio. All Rights Reserved.
