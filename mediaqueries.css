@@ -1,373 +1,104 @@
 @media screen and (max-width: 1200px) {
-  .icon-arrow,
-  .icon-arrow-outside,
-  .icon-next {
+  img {
+    width: 50%;
+  }
+  #desktop-nav {
     display: none;
   }
-  .container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 2rem 2rem;
-  }
-  .about-container {
-    display: contents;
-    margin: auto;
-    padding: 2rem 2rem;
-    overflow: hidden;
-    gap: 2rem;
-    height: 80vh;
-  }
-  .about-details-container {
-    margin: auto;
+  #hamburger-nav {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 3rem;
-  }
-  .section__pic-container {
-    margin: auto;
-    width: 30%;
-    padding: 2rem;
-  }
-  .experience-container {
-    display: contents;
-  }
-  .experience-details-container {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 3rem;
-    padding: 2rem 2rem;
-    border-radius: 2rem;
-    width: 40rem;
-    height: 20rem;
-    gap: 1rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-  }
-  .sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .project-container {
-    padding: 2rem 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px;
-    gap: 1rem;
-  }
-  .project-details-container {
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    text-align: center;
-    width: 80%;
-    gap: 1rem;
   }
 
-  .contact-content {
-    max-width: 1400px;
+  #home {
+    display: contents;
+  }
+
+  .header-container {
+    margin: 2rem 2rem;
+  }
+
+  .about-content {
+    display: contents;
+  }
+
+  .section__pic-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .section__pic-container img {
     margin: auto;
-    padding: 2rem 1rem;
-    height: 40vh;
+    border-radius: 100%;
+    width: 50%;
+  }
+
+  .experience-content {
+    display: contents;
+    padding: 2rem 2rem;
+    gap: 3rem;
+    overflow: hidden;
+  }
+
+  .experience-details-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 40rem;
+    height: 20rem;
+  }
+  .container-about {
+    padding: 0;
+  }
+
+  .project-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-details-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .icon-next {
+    display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .nav-links,
-  .icon-arrow,
-  .icon-arrow-outside,
-  .icon-next {
-    display: none;
+  img {
+    width: 60%;
   }
 
-  header {
-    margin: auto;
-    display: contents;
-    gap: 2rem;
-  }
-
-  p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 01rem;
-  }
-
-  header .image {
-    display: none;
-  }
-
-  .header-container {
-    padding: 2rem 3rem;
-    margin: auto;
-    overflow: hidden;
-    gap: 2rem;
-    height: 60vh;
-  }
-
-  .container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 2rem 2rem;
-  }
-  .about-container {
-    display: contents;
-    margin: auto;
-    padding: 2rem 2rem;
-    overflow: hidden;
-    gap: 2rem;
-  }
-  .about-details-container {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 1rem;
-  }
-  .section__pic-container {
-    margin: auto;
-    width: 40%;
-    padding: 2rem;
-  }
-  .experience-container {
-    display: contents;
-  }
-  .experience-details-container {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 3rem;
-    padding: 2rem 2rem;
-    border-radius: 2rem;
-    width: 30rem;
-    height: 25rem;
-    gap: 1rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-  }
-  .sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
+  .project-content {
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-  .project-container {
-    padding: 0.1rem 0.1rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px;
-    gap: 1rem;
-  }
-  .project-details-container {
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    text-align: center;
-    width: 100%;
-    gap: 2rem;
-  }
-
-  .contact-content {
-    max-width: 1400px;
-    margin: auto;
-    padding: 2rem 1rem;
-    height: 40vh;
   }
 }
 
-@media screen and (max-width: 468px) {
-  .nav-links,
-  .icon-arrow,
-  .icon-arrow-outside,
-  .icon-next {
-    display: none;
+@media screen and (max-width: 368px) {
+  img {
+    width: 100%;
   }
 
-  header {
+  .section__pic-container img {
     margin: auto;
+    border-radius: 100%;
+    width: 80%;
+  }
+
+  .container-about{
     display: contents;
-    gap: 2rem;
   }
 
-  p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-  }
-
-  header .image {
-    display: none;
-  }
-
-  .header-container {
-    padding: 2rem 3rem;
-    margin: auto;
-    overflow: hidden;
-    gap: 2rem;
-    height: 100%;
-  }
-
-  .container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 2rem 2rem;
-    height: 100%;
-  }
-  .about-container {
-    display: contents;
-    margin: auto;
-    padding: 2rem 2rem;
-    overflow: hidden;
-    gap: 2rem;
-  }
-  .about-containers {
-    display: contents;
-    justify-content: center;
-    gap: 2rem;
-  }
-  .details-container {
-    border-radius: 2rem;
-    padding: 1rem 1rem;
-    gap: 1rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
+  .about-container{
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .about-details-container {
-    margin: auto;
-    display: contents;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 1rem;
-  }
-  .section__pic-container {
-    margin: auto;
-    width: 60%;
-    padding: 2rem;
-  }
-  .experience-container {
-    display: contents;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+
+  .experience-details-container{
     overflow: hidden;
-    gap: 2rem;
-    height: 100%;
-  }
-  .experience-details-container {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    border-radius: 2rem;
-    width: 100%;
-    height: 100%;
-    gap: 1rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-  }
-  .article-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    justify-content: space-around;
-  }
-  article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-  }
-  .sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .project-container {
-    padding: 0.1rem 0.1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2px;
-    gap: 1rem;
-  }
-  .project-details-container {
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    text-align: center;
-    width: 100%;
-    gap: 2rem;
-  }
-
-  .contact-content {
-    max-width: 1400px;
-    margin: auto;
-    padding: 2rem 1rem;
-    height: 40vh;
-  }
-  .contact-container {
-    display: inline-block;
-    justify-content: start;
-    margin: auto;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53);
-  }
-  .contact-info-container {
-    display: flex;
-    justify-content: start;
-    text-align: start;
-    align-items: start;
-    gap: 0.5rem;
-    margin: 1rem;
-  }
-
-  .contact-info-container p {
-    width: 30vh;
-    font-size: larger;
-  }
-
-  .contact-icon {
-    width: 2rem;
-    cursor: default;
-  }
-
-  .email-icon {
-    width: 2rem;
-    cursor: default;
+    display: contents;
   }
 }
