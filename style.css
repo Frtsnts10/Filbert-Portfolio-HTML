@@ -204,8 +204,17 @@ header {
   gap: 1rem;
 }
 
-.article-container {
-  display: flex;
+.list-experience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.list-project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -216,11 +225,13 @@ header {
   font-weight: 600;
   font-size: 1.3rem;
 }
+
 .ability {
   font-family: "Courier Prime", sans-serif;
   font-weight: 400;
-  font-size: 01rem;
+  font-size: 1rem;
 }
+
 .name-Program {
   width: 8rem;
 }

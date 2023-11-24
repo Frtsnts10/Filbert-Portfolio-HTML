@@ -46,6 +46,7 @@
     width: 40rem;
     height: 20rem;
   }
+
   .container-about {
     padding: 0;
   }
@@ -67,8 +68,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  img {
-    width: 60%;
+  .container {
+    margin: auto;
+    padding: 1rem 1rem;
+  }
+
+  .section__pic-container img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    width: 50%;
+  }
+
+  .container-about {
+    display: flex;
   }
 
   .project-content {
@@ -77,28 +90,130 @@
   }
 }
 
-@media screen and (max-width: 368px) {
-  img {
-    width: 100%;
+@media screen and (max-width: 468px) {
+  .header-title {
+    font-size: 3rem;
   }
 
-  .section__pic-container img {
-    margin: auto;
-    border-radius: 100%;
+  .jobs {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+    color: #181818;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 4rem;
+    position: relative;
+  }
+
+  .jobs:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-left: 2px solid #4070f4;
+    animation: animate 4s steps(12) infinite;
+}
+
+  .sub-title {
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .program {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .ability {
+    font-family: "Courier Prime", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  img {
     width: 80%;
   }
 
-  .container-about{
+  .container {
+    margin: auto;
+    padding: 1rem 1rem;
+  }
+
+  .section__pic-container{
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .section__pic-container img {
+    
+    border-radius: 100%;
+    width: 100%;
+  }
+
+  .container-about {
     display: contents;
   }
 
-  .about-container{
+  .about-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
-  .experience-details-container{
+  .experience-content {
     overflow: hidden;
     display: contents;
+    padding: 2rem 2rem;
+  }
+
+  .sub-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .experience-details-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0.2rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .list-experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+
+  .list-projects {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+
+  .project-content {
+    display: contents;
+  }
+
+  .project-img {
+    border-radius: 2rem;
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
   }
 }
