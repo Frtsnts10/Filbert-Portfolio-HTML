@@ -1,40 +1,22 @@
 @media screen and (max-width: 1200px) {
-  .desktop-nav {
-    gap: 2rem;
-    margin: auto;
-    display: flex;
-    max-width: 1000px;
-    padding: 1rem 2rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-  /* section {
-    gap: 2rem;
-    margin: auto;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-    max-width: 1400px;
-    padding: 8rem 2rem;
-  }
-  .container {
-    max-width: 1400px;
-    margin: auto;
+  section {
     padding: 2rem 2rem;
     height: 100%;
-    position: relative;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
   }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    padding: 2rem 4rem;
+  }
+
   .hero {
-    gap: 2rem;
-    margin: auto;
-    min-height: 100vh;
-    overflow: hidden;
-    max-width: 1400px;
-    padding: 2rem 2rem;
-  } */
+    height: 100%;
+    padding: 2rem 4rem;
+  }
 
   .hero-image {
     width: 50%;
@@ -47,28 +29,37 @@
   .home-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .hero-image {
     order: -1;
   }
 
+  .about-container {
+    height: 100%;
+  }
+
   .about-content {
+    gap: 1rem;
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
 
   .section__pic-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     padding: 1rem;
   }
 
   .section__pic-container img {
     margin: auto;
     border-radius: 100%;
-    width: 50%;
+    width: 40%;
+  }
+
+  .container {
+    padding: 1rem 1rem;
   }
 
   .experience-details-container {
@@ -87,8 +78,8 @@
   .project-details-container {
     width: 16rem;
   }
-  
-  .project-details-container img{
+
+  .project-details-container img {
     width: 70%;
     margin: auto;
   }
@@ -101,6 +92,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  section {
+    padding: 2rem 4rem;
+    height: 100%;
+  }
 
   .desktop-nav {
     display: none;
@@ -108,11 +103,12 @@
   .mobile-nav {
     display: flex;
   }
+
   .container {
     padding: 1rem 1rem;
   }
-  
-  .home-container{
+
+  .home-container {
     height: 100%;
   }
 
@@ -136,13 +132,13 @@
   }
 
   .experience-content,
-  .education-content{
+  .education-content {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
-   .experience-details-container {
+  .experience-details-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
@@ -156,30 +152,25 @@
 }
 
 @media screen and (max-width: 468px) {
-  .header-title {
-    font-size: 3rem;
+
+  .header-title,
+  .title {
+    font-size: 2.6rem;
   }
 
-  .jobs {
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 1rem;
-    color: #181818;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 4rem;
-    position: relative;
-  }
 
-  .jobs:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  section {
+    padding: 2rem 2rem;
     height: 100%;
-    width: 100%;
-    background-color: #fff;
-    border-left: 2px solid #4070f4;
-    animation: animate 4s steps(12) infinite;
+  }
+
+  .mobile-nav,
+  .hero {
+    padding: 2rem 2rem;
+  }
+
+  .about-content{
+    padding: 0;
   }
 
   .sub-title {
@@ -201,7 +192,7 @@
   }
 
   img {
-    width: 80%;
+    width: 100%;
   }
 
   .container {

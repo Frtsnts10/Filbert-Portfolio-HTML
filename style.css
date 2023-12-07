@@ -91,7 +91,7 @@ section {
   gap: 2rem;
   margin: auto;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100%;
   overflow: hidden;
   max-width: 1400px;
   padding: 8rem 2rem;
@@ -187,7 +187,7 @@ section {
 .hero {
   gap: 2rem;
   margin: auto;
-  min-height: 100vh;
+  min-height: 100%;
   overflow: hidden;
   max-width: 1400px;
   padding: 2rem 2rem;
@@ -200,7 +200,6 @@ section {
   display: flex;
   overflow: hidden;
   margin-top: 1rem;
-  padding: 1rem 1rem;
   align-items: center;
   margin-bottom: 1rem;
   justify-content: space-around;
@@ -259,7 +258,8 @@ footer {
 
 .list-experience {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 1rem;
