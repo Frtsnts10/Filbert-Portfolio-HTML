@@ -5,8 +5,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-
-
 const toggleThemeButton = document.getElementById('toggleThemeButton');
 
 toggleThemeButton.addEventListener('click', () => {
@@ -18,15 +16,15 @@ toggleThemeButton.addEventListener('click', () => {
   }
 });
 
-const darkModeLogo = document.getElementById('darkModeLogo');
-const lightModeLogo = document.getElementById('lightModeLogo');
+// const darkModeLogo = document.getElementById('darkModeLogo');
+// const lightModeLogo = document.getElementById('lightModeLogo');
 
-toggleThemeButton.addEventListener('click', () => {
-  if (document.body.classList.contains('darkMode')) {
-    darkModeLogo.style.display = 'block';
-    lightModeLogo.style.display = 'none';
-  } else {
-    darkModeLogo.style.display = 'none';
-    lightModeLogo.style.display = 'block';
-  }
-});
+// toggleThemeButton.addEventListener('click', () => {
+//   if (document.body.classList.contains('darkMode')) {
+//     darkModeLogo.style.display = 'block';
+//     lightModeLogo.style.display = 'none';
+//   } else {
+//     darkModeLogo.style.display = 'none';
+//     lightModeLogo.style.display = 'block';
+//   }
+// });

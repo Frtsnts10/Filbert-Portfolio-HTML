@@ -9,136 +9,114 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <title>Personal Portfolio</title>
-    <nav id="desktop-nav">
-      <div class="nav-logo">
-        <!-- <a href="#">
-          <img
-            id="darkModeLogo"
-            src="images/logo-white.jpg"
-            alt="Logo"
-            style="display: none"
-          />
-        </a> -->
-
-        <!-- <a href="#">
-          <img id="lightModeLogo" src="images/logo-black.jpg" alt="Logo" />
-        </a> -->
-
-        <a href="/">
-          <h2 class="text-title">Filbert</h2>
-        </a>
-      </div>
-
-      <ul class="nav-links">
-        <li id="link1" class="link"><a href="#about">About</a></li>
-        <li id="link2" class="link"><a href="#experience">Experience</a></li>
-        <li id="link3" class="link"><a href="#projects">Projects</a></li>
-        <li id="link4" class="link"><a href="#contact">Contact</a></li>
-        <i class="btn ri-contrast-2-fill" id="toggleThemeButton"></i>
-      </ul>
-
-      <!-- <div>
-        <button class="hire-btn">Hire Me</button>
-      </div> -->
-    </nav>
-
-    <nav id="hamburger-nav">
-      <div class="nav-logo">
-        <a href="/">
-          <h2 class="text-title">Filbert</h2>
-        </a>
-      </div>
-
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <ul class="menu-links">
-          <li id="link1">
-            <a href="#about" onclick="toggleMenu()">About</a>
-          </li>
-          <li id="link2">
-            <a href="#experience" onclick="toggleMenu()">Experience</a>
-          </li>
-          <li id="link3">
-            <a href="#projects" onclick="toggleMenu()">Projects</a>
-          </li>
-          <li id="link4">
-            <a href="#contact" onclick="toggleMenu()">Contact</a>
-          </li>
-        </ul>
-        <i class="btn ri-contrast-2-fill" id="toggleThemeButton"></i>
-      </div>
-    </nav>
   </head>
   <body>
-    <header id="home">
-      <div class="header-container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-
-        <h1 class="header-title">Hi, I'm <span class="name">Filbert</span>,</h1>
-        <span class="jobs">Web Developer</span>
-
+    <header>
+      <div class="desktop-nav">
+        <a href="/" class="logo">
+          <h2 class="text-title">FS.</h2>
+        </a>
+        <nav class="nav-links">
+          <a href="#about" class="link">About</a>
+          <a href="#experience" class="link">Experience</a>
+          <a href="#education" class="link">Education</a>
+          <a href="#projects" class="link">Projects</a>
+          <a href="#contact" class="link">Contact</a>
+          <i class="btn ri-contrast-2-fill" id="toggleThemeButton"></i>
+        </nav>
         <script>
-          const text = document.querySelector(".jobs");
-
-          const textLoad = () => {
-            setTimeout(() => {
-              text.textContent = "Front End Dev";
-            }, 0);
-            setTimeout(() => {
-              text.textContent = "Translator";
-            }, 4000);
-            setTimeout(() => {
-              text.textContent = "Support";
-            }, 8000);
-            setTimeout(() => {
-              text.textContent = "Technician";
-            }, 12000); //1s = 1000 milliseconds
-          };
-
-          textLoad();
-          setInterval(textLoad, 16000);
+          window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+          });
         </script>
-
-        <div class="description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-            reprehenderit et laborum, rem, dolore eum quod voluptate
-            exercitationem nobis, nihil esse debitis maxime facere minus sint
-            delectus velit in eos quo officiis explicabo deleniti dignissimos.
-            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-            reiciendis ea magnam? Nulla, impedit fuga!
-          </p>
-        </div>
-
-        <button
-          class="dw-btn"
-          onclick="window.open('./assets/Filbert-Resume(EN).pdf')"
-        >
-          Download My CV
-        </button>
       </div>
 
-      <div class="image">
-        <img src="images/header-white.jpg" alt="" />
+      <div class="mobile-nav">
+        <a href="/" class="logo">
+          <h2 class="text-title">FS.</h2>
+        </a>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <ul class="menu-links">
+            <nav class="nav-links">
+              <a href="#about" class="link">About</a>
+              <a href="#experience" class="link">Experience</a>
+              <a href="#education" class="link">Education</a>
+              <a href="#projects" class="link">Projects</a>
+              <a href="#contact" class="link">Contact</a>
+              <i class="btn ri-contrast-2-fill" id="toggleThemeButton"></i>
+            </nav>
+          </ul>
+        </div>
+
+        <script>
+          window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+          });
+        </script>
       </div>
     </header>
 
-    <section id="about" class="container">
-      <h4 class="tags">Get To Know More</h4>
-      <h1 class="title">About Me</h1>
+    <div class="hero" id="home">
+      <div class="home-container">
+        <div class="hero-section">
+          <h2 class="welcome-text">HI THERE !</h2>
+          <h1 class="header-title">I'M FILBERT</h1>
+
+          <h3 class="header-jobs">
+            IT Support / Front End Dev / Bussiness Owner
+          </h3>
+
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+
+          <button
+            class="dw-btn"
+            onclick="window.open('./assets/Filbert-Resume(EN).pdf')"
+          >
+            Download My CV
+          </button>
+        </div>
+
+        <div class="hero-image">
+          <div class="image">
+            <img src="images/profile.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="title-container">
+        <h4 class="tags">Get To Know More</h4>
+        <h1 class="title">About Me</h1>
+      </div>
 
       <div class="about-content">
         <div class="section__pic-container">
           <img
-            src="./images/profile.jpg"
+            src="./images/profile-2.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -196,13 +174,17 @@
       />
     </section>
 
-    <section id="experience" class="container">
-      <h4 class="tags">Explore My</h4>
-      <h1 class="title">Experience</h1>
+    <section id="experience">
+      <div class="title-container">
+        <h4 class="tags">Explore My</h4>
+        <h1 class="title">Experience</h1>
+      </div>
 
       <div class="experience-content">
         <div class="experience-details-container">
-          <h2 class="sub-title">Frontend Development</h2>
+          <div class="experience-title">
+            <h2 class="sub-title">Frontend Development</h2>
+          </div>
 
           <div class="list-experience">
             <article>
@@ -212,19 +194,7 @@
                 class="icon"
               />
               <div class="name-Program">
-                <h3 class="program">HTML</h3>
-                <p class="ability">Intermediate</p>
-              </div>
-            </article>
-
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div class="name-Program">
-                <h3 class="program">CSS</h3>
+                <h3 class="program">HTML/CSS</h3>
                 <p class="ability">Intermediate</p>
               </div>
             </article>
@@ -272,15 +242,17 @@
                 class="icon"
               />
               <div class="name-Program">
-                <h3 class="program"></h3>
-                <p class="ability"></p>
+                <h3 class="program">Next JS</h3>
+                <p class="ability">Basic</p>
               </div>
             </article>
           </div>
         </div>
 
         <div class="experience-details-container">
-          <h2 class="sub-title">Backend Development</h2>
+          <div class="experience-title">
+            <h2 class="sub-title">Backend Development</h2>
+          </div>
 
           <div class="list-experience">
             <article>
@@ -342,62 +314,274 @@
       />
     </section>
 
-    <section id="projects" class="container">
-      <h4 class="tags">Browse My Recent</h4>
-      <h1 class="title">Projects</h1>
+    <section id="education">
+      <div class="title-container">
+        <h4 class="tags">Discover My</h4>
+        <h1 class="title">Education Journey</h1>
+      </div>
+
+      <div class="education-content">
+        <div class="experience-details-container">
+          <div class="experience-title">
+            <h2 class="sub-title">Frontend Development</h2>
+          </div>
+
+          <div class="list-experience">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">HTML/CSS</h3>
+                <p class="ability">Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">React JS</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">React Native</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">Flutter</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">Next JS</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="experience-details-container">
+          <div class="experience-title">
+            <h2 class="sub-title">Backend Development</h2>
+          </div>
+
+          <div class="list-experience">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">MySQL</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">NodeJS</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program">Git</h3>
+                <p class="ability">Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div class="name-Program">
+                <h3 class="program"></h3>
+                <p class="ability"></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/icon-down.png"
+        alt="Arrow icon"
+        class="icon-arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <div class="title-container">
+        <h4 class="tags">Browse My Recent</h4>
+        <h1 class="title">Projects</h1>
+      </div>
 
       <div class="project-content">
-        <img src="./assets/icon-left.png" alt="Next icon" class="icon-next" />
+        <div class="card-container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <div
+                  class="card-content project-details-container color-container"
+                >
+                  <img
+                    src="./assets/Pokemon.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
 
-        <div class="project-details-container color-container">
-          <div class="list-projects">
-            <img
-              src="./assets/project-1.png"
-              alt="Project 1"
-              class="project-img"
-            />
+                  <h2 class="project-title">Pokemon Clone</h2>
+
+                  <span class="badge flutter">Flutter</span>
+                  <span class="badge c_plus">C++</span>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Frtsnts10/Pokemon_tugas', '_blank'"
+                      target="_blank"
+                    >
+                      Github
+                    </button>
+                    <button class="btn-color-2 project-btn">Live Demo</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <div
+                  class="card-content project-details-container color-container"
+                >
+                  <img
+                    src="./assets/Ramie.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+
+                  <h2 class="project-title">Admin Dashboard</h2>
+
+                  <span class="badge nextjs">Next JS</span>
+                  <span class="badge typescript">TypeScript</span>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Frtsnts10/Pokemon_tugas', '_blank'"
+                      target="_blank"
+                    >
+                      Github
+                    </button>
+                    <button class="btn-color-2 project-btn">Live Demo</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <div
+                  class="card-content project-details-container color-container"
+                >
+                  <img
+                    src="./assets/Ramie.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+
+                  <h2 class="project-title">Admin Dashboard</h2>
+
+                  <span class="badge nextjs">Next JS</span>
+                  <span class="badge typescript">TypeScript</span>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Frtsnts10/Pokemon_tugas', '_blank'"
+                      target="_blank"
+                    >
+                      Github
+                    </button>
+                    <button class="btn-color-2 project-btn">Live Demo</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide card">
+                <div
+                  class="card-content project-details-container color-container"
+                >
+                  <img
+                    src="./assets/Ramie.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+
+                  <h2 class="project-title">Admin Dashboard</h2>
+
+                  <span class="badge nextjs">Next JS</span>
+                  <span class="badge typescript">TypeScript</span>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Frtsnts10/Pokemon_tugas', '_blank'"
+                      target="_blank"
+                    >
+                      Github
+                    </button>
+                    <button class="btn-color-2 project-btn">Live Demo</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h2 class="project-title">Pokemon Clone</h2>
-          <div class="btn-container">
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/Frtsnts10/Pokemon_tugas', '_blank'" target="_blank">Github</button>
-            <button class="btn-color-2 project-btn">Live Demo</button>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-
-        <div class="project-details-container color-container">
-          <div class="list-projects">
-            <img
-              src="./assets/project-2.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-
-          <h2 class="project-title">Ramie Website</h2>
-          <div class="btn-container">
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com/Frtsnts10/RamieProject'" >Github</button>
-            <button class="btn-color-2 project-btn">Live Demo</button>
-          </div>
-        </div>
-
-        <div class="project-details-container">
-          <div class="list-projects">
-            <img
-              src="./assets/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-
-          <h2 class="project-title">Project Three</h2>
-          <div class="btn-container">
-            <button class="btn-color-2 project-btn">Github</button>
-            <button class="btn-color-2 project-btn">Live Demo</button>
-          </div>
-        </div>
-
-        <img src="./assets/icon-right.png" alt="Next icon" class="icon-next" />
       </div>
 
       <img
@@ -408,9 +592,11 @@
       />
     </section>
 
-    <section id="contact" class="container">
-      <h4 class="tags">Get in Touch !</h4>
-      <h1 class="title">Contact Me</h1>
+    <!-- <section id="contact">
+      <div class="title-container">
+        <h4 class="tags">Get in Touch</h4>
+        <h1 class="title">Contact Me</h1>
+      </div>
 
       <div class="contact-content">
         <div class="contact-info-container">
@@ -442,14 +628,37 @@
         src="./assets/icon-up.png"
         alt="Arrow icon"
         class="icon-arrow"
-        onclick="location.href='./#nav'"
+        onclick="location.href='./#desktop-nav'"
       />
-    </section>
+    </section> -->
 
-    <div class="copyright">
-      Copyright @ 2023 Filbert Portfolio. All Rights Reserved.
-    </div>
+    <footer class="container">
+      <h2 class="copyright">
+        Copyright @ 2023 Filbert Portfolio. All Rights Reserved.
+      </h2>
+    </footer>
 
     <script src="script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
