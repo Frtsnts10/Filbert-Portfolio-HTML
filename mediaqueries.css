@@ -104,7 +104,7 @@
     padding: 0;
   }
 
-  .about-content{
+  .about-content {
     padding: 0;
   }
   .title-container {
@@ -174,7 +174,9 @@
     height: 100%;
   }
 
-  .mobile-nav,
+  .mobile-nav {
+    padding: 1rem 2rem;
+  }
   .hero {
     padding: 2rem 2rem;
   }
