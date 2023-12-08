@@ -42,8 +42,6 @@ body {
 
 .container {
   max-width: 1400px;
-  margin: auto;
-  padding: 2rem 2rem;
   height: 100%;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
@@ -91,10 +89,10 @@ section {
   gap: 2rem;
   margin: auto;
   align-items: center;
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
   max-width: 1400px;
-  padding: 8rem 2rem;
+  padding: 2rem 2rem;
 }
 
 /* h1 */
@@ -198,6 +196,7 @@ section {
   width: 100%;
   height: 82vh;
   display: flex;
+  padding: 1rem 1rem;
   overflow: hidden;
   margin-top: 1rem;
   align-items: center;
@@ -210,7 +209,7 @@ section {
 .education-content,
 .project-content {
   gap: 2rem;
-  height: 55vh;
+  height: 60vh;
   display: flex;
   overflow: hidden;
   margin-top: 2rem;
@@ -240,8 +239,8 @@ footer {
   gap: 2rem;
   display: grid;
   margin: auto;
-  height: 40vh;
-  width: 50%;
+  height: 45vh;
+  width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem 2rem;
@@ -351,8 +350,8 @@ footer {
 
 .icon-arrow {
   position: relative;
-  right: -40rem;
-  bottom: -3rem;
+  right: -38rem;
+  bottom: 2rem;
   margin: auto;
   width: 3%;
   cursor: pointer;
@@ -471,17 +470,6 @@ footer {
 
 /* ===== nav ===== */
 
-/* #desktop-nav {
-  gap: 2rem;
-  height: 40vh;
-  margin: auto;
-  display: flex;
-  max-width: 1400px;
-  padding: 2rem 2rem;
-  align-items: center;
-  justify-content: space-between;
-} */
-
 .nav-logo {
   max-width: 100px;
 }
@@ -508,6 +496,11 @@ footer {
 }
 
 /* ====== profile ====== */
+
+.title-container{
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
 
 .hero-section {
   width: 60%;
@@ -584,7 +577,6 @@ header .image {
 
 .section__pic-container {
   margin: auto;
-  padding: 1rem;
 }
 
 .section__pic-container img {
@@ -595,8 +587,6 @@ header .image {
 .container-about {
   display: flex;
   padding: 1rem 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   justify-content: space-around;
   gap: 2rem;
 }

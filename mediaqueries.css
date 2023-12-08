@@ -4,13 +4,8 @@
     height: 100%;
   }
 
-  .desktop-nav {
-    display: none;
-  }
-
   .mobile-nav {
-    display: flex;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
 
   .hero {
@@ -91,9 +86,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   section {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     height: 100%;
   }
 
@@ -108,23 +103,33 @@
     padding: 1rem 1rem;
   }
 
+  .title-container {
+    padding-top: 7.5rem;
+  }
+
   .home-container {
     height: 100%;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 2rem 2rem;
   }
 
   .hero-image {
-    width: 70%;
+    width: 50%;
   }
 
   .section__pic-container img {
     border-radius: 100%;
-    width: 60%;
+    width: 50%;
   }
 
   .container-about {
     display: flex;
-    flex-direction: column;
     padding: 1rem 1rem;
+    height: 32vh;
+    margin: auto;
   }
 
   .about-container {
@@ -135,13 +140,14 @@
   .education-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100%;
   }
 
   .experience-details-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
 
@@ -152,12 +158,10 @@
 }
 
 @media screen and (max-width: 468px) {
-
   .header-title,
   .title {
     font-size: 2.6rem;
   }
-
 
   section {
     padding: 2rem 2rem;
@@ -169,7 +173,15 @@
     padding: 2rem 2rem;
   }
 
-  .about-content{
+  .title-container {
+    padding-top: 6rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .about-content {
     padding: 0;
   }
 
