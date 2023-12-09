@@ -1,7 +1,11 @@
 @media screen and (max-width: 1200px) {
   section {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
     height: 100%;
+  }
+
+  .desktop-nav{
+    padding: 2rem 4rem;
   }
 
   .hero {
@@ -81,7 +85,7 @@
 
 @media screen and (max-width: 968px) {
   section {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
     height: 100%;
   }
 
@@ -90,7 +94,7 @@
   }
   .mobile-nav {
     display: flex;
-    padding: 1rem 2rem;
+    padding: 2rem 4rem;
   }
 
   .container {
@@ -110,7 +114,7 @@
   }
 
   .hero {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
   }
 
   .hero-image {
@@ -163,15 +167,16 @@
   }
 
   section {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
     height: 100%;
   }
 
   .mobile-nav {
-    padding: 1rem 2rem;
+    padding: 2rem 4rem;
   }
+
   .hero {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
   }
 
   .title-container {
@@ -185,6 +190,7 @@
   .about-content {
     padding: 0;
   }
+  
 
   .sub-title {
     text-align: center;
@@ -231,7 +237,6 @@
 
   .experience-content {
     overflow: hidden;
-    display: contents;
     padding: 2rem 2rem;
   }
 
@@ -380,10 +385,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
+    align-items: center;
+    padding: 1rem;
   }
-
+  
+  article{
+    width: 100%;
+  }
   .list-projects {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
