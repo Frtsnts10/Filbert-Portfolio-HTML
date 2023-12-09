@@ -1,11 +1,7 @@
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   section {
     padding: 2rem 2rem;
     height: 100%;
-  }
-
-  .mobile-nav {
-    padding: 2rem 2rem;
   }
 
   .hero {
@@ -24,7 +20,7 @@
   }
 
   .hero-image {
-    width: 50%;
+    width: 40%;
     order: -1;
   }
 
@@ -47,7 +43,7 @@
   .section__pic-container img {
     margin: auto;
     border-radius: 100%;
-    width: 40%;
+    width: 35%;
   }
 
   .container {
@@ -83,7 +79,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 968px) {
   section {
     padding: 2rem 2rem;
     height: 100%;
@@ -94,7 +90,7 @@
   }
   .mobile-nav {
     display: flex;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .container {
@@ -123,7 +119,7 @@
 
   .section__pic-container img {
     border-radius: 100%;
-    width: 50%;
+    width: 40%;
   }
 
   .container-about {
@@ -160,7 +156,7 @@
   }
 }
 
-@media screen and (max-width: 468px) {
+/* @media screen and (max-width: 468px) {
   .header-title,
   .title {
     font-size: 2.6rem;
