@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   section {
     padding: 2rem 2rem;
     height: 100%;
@@ -13,10 +13,6 @@
     padding: 2rem 4rem;
   }
 
-  .hero-image {
-    width: 50%;
-  }
-
   .hero-section {
     width: 100%;
   }
@@ -28,6 +24,7 @@
   }
 
   .hero-image {
+    width: 50%;
     order: -1;
   }
 
@@ -291,4 +288,4 @@
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
   }
-}
+} */

@@ -194,9 +194,8 @@ section {
 .home-container {
   gap: 2rem;
   width: 100%;
-  height: 82vh;
+  height: 100%;
   display: flex;
-  padding: 1rem 1rem;
   overflow: hidden;
   margin-top: 1rem;
   align-items: center;
@@ -209,7 +208,7 @@ section {
 .education-content,
 .project-content {
   gap: 2rem;
-  height: 60vh;
+  height: 100%;
   display: flex;
   overflow: hidden;
   margin-top: 2rem;
@@ -236,11 +235,11 @@ footer {
 }
 
 .experience-details-container {
+  height: 30vh;
   gap: 2rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  height: 45vh;
-  width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem 2rem;
@@ -257,29 +256,27 @@ footer {
 
 .list-experience {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 0fr);
   width: 100%;
   flex-wrap: wrap;
-  flex-direction: row;
+  margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .project-details-container {
   margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
   width: 100%;
-  height: 26rem;
+  height: 100%;
 }
 
 .project-details-container img {
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -312,6 +309,7 @@ footer {
 .btn-container {
   display: flex;
   justify-content: center;
+  width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -351,7 +349,7 @@ footer {
 .icon-arrow {
   position: relative;
   right: -38rem;
-  bottom: 2rem;
+  bottom: -10rem;
   margin: auto;
   width: 3%;
   cursor: pointer;
@@ -497,7 +495,7 @@ footer {
 
 /* ====== profile ====== */
 
-.title-container{
+.title-container {
   padding-top: 6rem;
   padding-bottom: 2rem;
 }
@@ -624,14 +622,13 @@ article .icon {
 
 .project-img {
   border-radius: 0;
-  padding-top: 1rem;
 }
 
 .project-btn {
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  width: max-content;
   font-size: 1rem;
   border-radius: 10px;
-  width: 8rem;
   cursor: pointer;
   color: black;
   border-color: rgb(163, 163, 163);
@@ -667,9 +664,7 @@ body {
 }
 
 .swiper {
-  width: 80%;
-  gap: 2rem;
-  margin: 1rem;
+  width: 950px;
 }
 
 .card-container {
@@ -679,17 +674,17 @@ body {
   align-items: center;
 }
 
-.card {
-  width: 100%;
-}
-
-.swiper-pagination-bullet {
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   height: 7px;
-  width: 30px;
+  width: 2vw;
   border-radius: 25px;
   background: #777;
 }
 
+.swiper-pagination{
+ bottom: -30px;
+  ;
+}
 /* ===== Contact ====== */
 
 .contact-info-container {
