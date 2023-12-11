@@ -5,7 +5,7 @@
   }
 
   .desktop-nav{
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
   }
 
   .hero {
@@ -81,6 +81,15 @@
     gap: 2rem;
     margin: 1rem;
   }
+
+  .darkMode {
+    transition: background-color 0.5s ease-in-out;
+    background-color: #181818;
+    color: #fff;
+    content: "";
+    background-image: url("images/moon-icon.svg");
+  }
+  
 }
 
 @media screen and (max-width: 968px) {
@@ -94,7 +103,7 @@
   }
   .mobile-nav {
     display: flex;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
   }
 
   .container {
@@ -172,7 +181,7 @@
   }
 
   .mobile-nav {
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
   }
 
   .hero {
@@ -307,7 +316,7 @@
   }
 
   .title-container {
-    padding-top: 6rem;
+    padding-top: 2rem;
   }
 
   .hero-image {
