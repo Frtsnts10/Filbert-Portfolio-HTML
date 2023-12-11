@@ -88,11 +88,13 @@ nav a {
 section {
   gap: 2rem;
   margin: auto;
-  align-items: center;
-  min-height: 100vh;
   overflow: hidden;
   max-width: 1400px;
   padding: 2rem 2rem;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 96vh;
 }
 
 /* h1 */
@@ -185,7 +187,7 @@ section {
 .hero {
   gap: 2rem;
   margin: auto;
-  min-height: 100%;
+  height: 96vh;
   overflow: hidden;
   max-width: 1400px;
   padding: 2rem 2rem;
@@ -193,9 +195,9 @@ section {
 
 .home-container {
   gap: 2rem;
-  width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
   margin-top: 1rem;
   align-items: center;
@@ -203,7 +205,17 @@ section {
   justify-content: space-around;
 }
 
-.about-content,
+.about-content{
+  gap: 4rem;
+  height: 100%;
+  display: grid;
+  overflow: hidden;
+  margin-top: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  grid-template-columns: 30% 60%;
+}
+
 .experience-content,
 .education-content,
 .project-content {
@@ -212,7 +224,6 @@ section {
   display: flex;
   overflow: hidden;
   margin-top: 2rem;
-  padding: 1rem 1rem;
   align-items: center;
   margin-bottom: 2rem;
   justify-content: space-around;
@@ -347,13 +358,13 @@ footer {
 }
 
 .icon-arrow {
-  position: relative;
-  right: -38rem;
-  bottom: -10rem;
-  margin: auto;
-  width: 3%;
+  position: absolute;
+  right: 5rem;
+  bottom: 1rem;
+  width: 40px;
   cursor: pointer;
 }
+
 .icon-arrow-outside {
   position: absolute;
   right: -5rem;
@@ -500,14 +511,6 @@ footer {
   padding-bottom: 2rem;
 }
 
-.hero-section {
-  width: 60%;
-}
-
-.hero-image {
-  width: 40%;
-}
-
 .header-title {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -557,7 +560,8 @@ header .image {
 }
 
 .hero-image img {
-  width: 80%;
+  width: 400px;
+  height: 400px;
   margin: auto;
 }
 
@@ -580,6 +584,8 @@ header .image {
 .section__pic-container img {
   margin: auto;
   border-radius: 100%;
+  width: 400px;
+  height: 400px;
 }
 
 .container-about {
@@ -602,6 +608,7 @@ header .image {
 
 .about-description {
   margin: auto;
+  padding: 1rem 1rem;
 }
 
 /* ===== Experience ===== */
@@ -674,16 +681,16 @@ body {
   align-items: center;
 }
 
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   height: 7px;
   width: 2vw;
   border-radius: 25px;
   background: #777;
 }
 
-.swiper-pagination{
- bottom: -30px;
-  ;
+.swiper-pagination {
+  bottom: -30px;
 }
 /* ===== Contact ====== */
 

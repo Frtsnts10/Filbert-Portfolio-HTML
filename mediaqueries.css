@@ -4,7 +4,7 @@
     height: 100%;
   }
 
-  .desktop-nav{
+  .desktop-nav {
     padding: 1rem 4rem;
   }
 
@@ -24,8 +24,13 @@
   }
 
   .hero-image {
-    width: 40%;
     order: -1;
+  }
+
+  .hero-image img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
   }
 
   .about-container {
@@ -47,7 +52,6 @@
   .section__pic-container img {
     margin: auto;
     border-radius: 100%;
-    width: 35%;
   }
 
   .container {
@@ -89,7 +93,6 @@
     content: "";
     background-image: url("images/moon-icon.svg");
   }
-  
 }
 
 @media screen and (max-width: 968px) {
@@ -126,13 +129,19 @@
     padding: 2rem 4rem;
   }
 
-  .hero-image {
-    width: 50%;
+  .hero-image img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+  }
+  
+  .section__pic-container {
+    padding: 1rem;
   }
 
   .section__pic-container img {
+    margin: auto;
     border-radius: 100%;
-    width: 40%;
   }
 
   .container-about {
@@ -167,6 +176,10 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+  .icon-arrow{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -192,14 +205,19 @@
     padding-top: 6rem;
   }
 
-  .hero-image {
-    width: 60%;
+  .hero-image img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
   }
 
   .about-content {
     padding: 0;
   }
-  
+
+  .about-description {
+    padding: 0;
+  }
 
   .sub-title {
     text-align: center;
@@ -225,13 +243,13 @@
   }
 
   .section__pic-container {
-    margin-top: 2rem;
-    margin-bottom: 0;
+    width: 100%;
+    padding: 1rem;
   }
 
   .section__pic-container img {
+    margin: auto;
     border-radius: 100%;
-    width: 60%;
   }
 
   .container-about {
@@ -241,7 +259,7 @@
   .about-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    height: 25vh;
+    height: 100%;
   }
 
   .experience-content {
@@ -319,8 +337,10 @@
     padding-top: 2rem;
   }
 
-  .hero-image {
-    width: 80%;
+  .hero-image img {
+    width: 350px;
+    height: 350px;
+    margin: auto;
   }
 
   .about-content {
@@ -351,13 +371,14 @@
   }
 
   .section__pic-container {
-    margin-top: 2rem;
-    margin-bottom: 0;
+    padding: 0;
   }
 
   .section__pic-container img {
     border-radius: 100%;
-    width: 80%;
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .container-about {
@@ -367,7 +388,7 @@
   .about-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    height: 25vh;
+    height: 100%;
   }
 
   .experience-content {
@@ -397,8 +418,8 @@
     align-items: center;
     padding: 1rem;
   }
-  
-  article{
+
+  article {
     width: 100%;
   }
   .list-projects {
