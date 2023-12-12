@@ -79,6 +79,7 @@ header.sticky {
   text-decoration: none;
   font-weight: 600;
 }
+
 nav a {
   font-size: 18px;
   text-decoration: none;
@@ -205,7 +206,7 @@ section {
   justify-content: space-around;
 }
 
-.about-content{
+.about-content {
   gap: 4rem;
   height: 100%;
   display: grid;
@@ -216,7 +217,17 @@ section {
   grid-template-columns: 30% 60%;
 }
 
-.experience-content,
+.experience-content {
+  gap: 2rem;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .education-content,
 .project-content {
   gap: 2rem;
@@ -246,7 +257,7 @@ footer {
 }
 
 .experience-details-container {
-  height: 30vh;
+  height: 100%;
   gap: 2rem;
   display: flex;
   flex-direction: column;
@@ -267,7 +278,7 @@ footer {
 
 .list-experience {
   display: grid;
-  grid-template-columns: repeat(3, 0fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   flex-wrap: wrap;
   margin: auto;
@@ -727,13 +738,6 @@ body {
   content: "";
   background-image: url("images/moon-icon.svg");
 }
-
-/* .darkMode #darkModeLogo {
-  display: none;
-}
-.darkMode #lightModeLogo {
-  display: block;
-} */
 
 .darkMode .nav-links a {
   color: #fff;
