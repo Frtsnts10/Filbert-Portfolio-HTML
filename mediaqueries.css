@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
   .desktop-nav{
     display: none;
   }
@@ -123,7 +123,7 @@
 
   section {
     padding: 2rem 2rem;
-    min-height: 96vh;
+    min-height: 120vh;
   }
 
   .title-container {
@@ -159,6 +159,7 @@
   .container-about,
   .about-description {
     padding: 0;
+    margin: 1rem;
   }
 
   .about-container {
@@ -227,6 +228,10 @@
     color: #fff;
     content: "";
     background-image: url("images/moon-icon.svg");
+  }
+
+  .icon-arrow{
+    display: none;
   }
 }
 
