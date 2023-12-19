@@ -178,6 +178,12 @@
     padding-top: 6rem;
   }
 
+  #projects {
+    padding-top: 6rem;
+    min-height: 92vh;
+    position: relative;
+  }
+
   #contact {
     min-height: 92vh;
     position: relative;
@@ -278,7 +284,7 @@
     margin: auto;
     gap: 1rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
   }
 
@@ -364,55 +370,28 @@
     margin-bottom: 4rem;
   }
 
-  .card-container {
-    width: 100%;
-    position: relative;
-    margin: 1rem;
-  }
-
-  .swiper {
-    width: 1200px;
-    height: 50vh;
-    margin: auto;
-  }
-
-  .swiper-slide.card {
-    margin: auto;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-    height: 40vh;
-  }
-
-  .project-details-container {
-    padding: 1rem;
-  }
-
   .card-top {
-    padding: 1rem;
-  }
-
-  .card-top img {
-    width: 50%;
-    border-radius: 100%;
-    margin: auto;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .project-title {
+    text-align: center;
     margin: 1rem;
   }
 
   .badge {
-    height: 5vh;
-    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    gap: 2rem;
   }
 
   .badge-icon {
+    align-items: center;
     margin: auto;
     padding: 0.5rem;
     color: white;
@@ -420,6 +399,8 @@
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     border-radius: 100px;
+
+    text-align: center;
   }
 
   .flutter {
@@ -438,9 +419,43 @@
     background-color: red;
   }
 
+  .swiper {
+    width: 100%;
+    height: max-content;
+    padding: 5rem;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    height: max-content;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
   .card-button {
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -448,7 +463,7 @@
 
   .project-btn {
     padding: 1rem;
-    width: 7vw;
+    width: max-content;
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
@@ -456,10 +471,16 @@
     border-color: rgb(163, 163, 163);
   }
 
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
   .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
     height: 7px;
-    width: 2vw;
+    width: 30px;
     border-radius: 25px;
     background: #777;
   }
@@ -865,55 +886,28 @@
     margin-bottom: 4rem;
   }
 
-  .card-container {
-    width: 100%;
-    position: relative;
-    margin: 1rem;
-  }
-
-  .swiper {
-    width: 1200px;
-    height: 50vh;
-    margin: auto;
-  }
-
-  .swiper-slide.card {
-    margin: auto;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-    height: 40vh;
-  }
-
-  .project-details-container {
-    padding: 1rem;
-  }
-
   .card-top {
-    padding: 1rem;
-  }
-
-  .card-top img {
-    width: 50%;
-    border-radius: 100%;
-    margin: auto;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .project-title {
+    text-align: center;
     margin: 1rem;
   }
 
   .badge {
-    height: 5vh;
-    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    gap: 2rem;
   }
 
   .badge-icon {
+    align-items: center;
     margin: auto;
     padding: 0.5rem;
     color: white;
@@ -921,6 +915,8 @@
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     border-radius: 100px;
+
+    text-align: center;
   }
 
   .flutter {
@@ -939,9 +935,43 @@
     background-color: red;
   }
 
+  .swiper {
+    width: 100%;
+    height: max-content;
+    padding: 5rem;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    height: max-content;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
   .card-button {
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -949,7 +979,7 @@
 
   .project-btn {
     padding: 1rem;
-    width: 7vw;
+    width: max-content;
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
@@ -957,10 +987,16 @@
     border-color: rgb(163, 163, 163);
   }
 
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
   .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
     height: 7px;
-    width: 2vw;
+    width: 30px;
     border-radius: 25px;
     background: #777;
   }
@@ -1289,7 +1325,7 @@
     order: 1;
   }
 
-  .education-card{
+  .education-card {
     gap: 2rem;
     width: 400px;
     height: 250px;
@@ -1313,6 +1349,121 @@
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-top {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .project-title {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .badge {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: max-content;
+    gap: 2rem;
+  }
+
+  .badge-icon {
+    align-items: center;
+    margin: auto;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    border-radius: 100px;
+
+    text-align: center;
+  }
+
+  .flutter {
+    background-color: blue;
+  }
+
+  .c_plus {
+    background-color: red;
+  }
+
+  .nextjs {
+    background-color: red;
+  }
+
+  .typescript {
+    background-color: red;
+  }
+
+  .swiper {
+    width: 100%;
+    height: max-content;
+    padding: 5rem;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    height: max-content;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-button {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .project-btn {
+    padding: 1rem;
+    width: max-content;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    height: 7px;
+    width: 30px;
+    border-radius: 25px;
+    background: #777;
   }
 }
 
@@ -1616,6 +1767,125 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .card-top {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .project-title {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .badge {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: max-content;
+    gap: 2rem;
+  }
+
+  .badge-icon {
+    align-items: center;
+    margin: auto;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    border-radius: 100px;
+
+    text-align: center;
+  }
+
+  .flutter {
+    background-color: blue;
+  }
+
+  .c_plus {
+    background-color: red;
+  }
+
+  .nextjs {
+    background-color: red;
+  }
+
+  .typescript {
+    background-color: red;
+  }
+
+  .swiper {
+    width: 100%;
+    height: max-content;
+    padding: 5rem;
+  }
+
+  .swiper-wrapper {
+    height: max-content;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    height: max-content;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-button {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .project-btn {
+    padding: 1rem;
+    width: max-content;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    height: 7px;
+    width: 30px;
+    border-radius: 25px;
+    background: #777;
   }
 
   .contact-container {

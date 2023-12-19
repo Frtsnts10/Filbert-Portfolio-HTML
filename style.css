@@ -306,7 +306,7 @@ p {
 
 #projects {
   padding-top: 6rem;
-  min-height: 92vh;
+  min-height: 40vh;
   position: relative;
 }
 
@@ -508,7 +508,6 @@ article .icon {
 
 .project-container {
   margin: auto;
-  height: 60vh;
   display: flex;
   margin-top: 4rem;
   position: relative;
@@ -518,53 +517,32 @@ article .icon {
 
 .card-container {
   width: 100%;
+  height: 100%;
   position: relative;
-  margin: 1rem;
-}
-
-.swiper {
-  width: 1200px;
-  height: 50vh;
-  margin: auto;
-}
-
-.swiper-slide.card {
-  margin: auto;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  height: 40vh;
-}
-
-.project-details-container {
-  padding: 1rem;
 }
 
 .card-top {
-  padding: 1rem;
-}
-
-.card-top img {
-  width: 50%;
-  border-radius: 100%;
-  margin: auto;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .project-title {
+  text-align: center;
   margin: 1rem;
 }
 
 .badge {
-  height: 5vh;
-  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: max-content;
+  gap: 2rem;
 }
 
-.badge-icon{
+.badge-icon {
+  align-items: center;
   margin: auto;
   padding: 0.5rem;
   color: white;
@@ -572,6 +550,8 @@ article .icon {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   border-radius: 100px;
+
+  text-align: center;
 }
 
 .flutter {
@@ -590,9 +570,47 @@ article .icon {
   background-color: red;
 }
 
-.card-button{
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+}
+
+.swiper-wrapper{
+  height: max-content;
+}
+
+.swiper-wrapper .swiper-slide {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.2rem solid;
+  border-color: rgb(163, 163, 163);
+  height: 100%;
+  padding: 1rem;
   margin: auto;
-  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.swiper-slide img {
+  display: block;
+  border-radius: 100%;
+  margin: auto;
+  border: rgb(53, 53, 53) 0.1rem solid;
+
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-button {
+  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -600,7 +618,7 @@ article .icon {
 
 .project-btn {
   padding: 1rem;
-  width: 7vw;
+  width: max-content;
   font-size: 1rem;
   border-radius: 10px;
   cursor: pointer;
@@ -608,10 +626,16 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.swiper-pagination{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   height: 7px;
-  width: 2vw;
+  width: 30px;
   border-radius: 25px;
   background: #777;
 }
