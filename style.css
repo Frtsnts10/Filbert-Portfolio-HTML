@@ -93,15 +93,33 @@ section {
 }
 
 .welcome-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", serif;
+  font-weight: 500;
   font-size: 2rem;
 }
 
 .header-title {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+.working-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.education-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.project-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
 }
 /* h1 */
 
@@ -115,7 +133,7 @@ section {
 }
 
 .card-title {
-  font-family: "Monserrat", serif;
+  font-family: "Roboto", serif;
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
@@ -123,15 +141,34 @@ section {
 }
 
 .card-description {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-family: "Inconsolata", serif;
+  font-weight: 500;
+  font-size: 1.1rem;
   line-height: 2rem;
 }
 
 .copyright {
-  font-family: "Inconsolata", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.contact-input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.working-job {
+  font-family: "Inconsolata", serif;
+  font-weight: 400;
   font-size: 1.2rem;
 }
 /* h2 */
@@ -140,7 +177,7 @@ section {
 .header-jobs {
   font-family: "Roboto", serif;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .dev-title {
@@ -148,6 +185,18 @@ section {
   font-weight: 500;
   font-size: 1.8rem;
   text-align: center;
+}
+
+.working-info p {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.education-info p {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 /* h3 */
 
@@ -162,8 +211,14 @@ section {
 }
 
 p {
-  font-family: "Playfair Display", serif;
+  font-family: "Inconsolata", serif;
   font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.education-years {
+  font-family: "Inconsolata", serif;
+  font-weight: 500;
   font-size: 1.3rem;
 }
 /* h4 */
@@ -280,6 +335,7 @@ p {
   position: relative;
   display: grid;
   grid-template-columns: 60% 40%;
+  padding-top: 6rem;
 }
 
 #about {
@@ -302,6 +358,13 @@ p {
   display: grid;
   grid-template-columns: 60% 40%;
   padding-top: 6rem;
+}
+
+#working {
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #projects {
@@ -338,9 +401,13 @@ p {
 
 .welcome-text,
 .header-title,
-.header-jobs,
+.header-jobs {
+  padding: 0.2rem 1rem;
+}
+
 .hero-description {
   padding: 1rem 1rem;
+  line-height: 1.8rem;
 }
 
 .dw-btn {
@@ -382,7 +449,7 @@ p {
 .container-card {
   margin: 1rem;
   width: 360px;
-  height: 30vh;
+  height: 25vh;
   border-radius: 2rem;
   padding: 1rem 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -397,6 +464,7 @@ p {
 
 .about-description {
   padding: 0 2rem;
+  line-height: 2rem;
 }
 
 #experience .title-container {
@@ -458,7 +526,7 @@ article .icon {
 }
 
 .ability {
-  font-family: "Courier Prime", sans-serif;
+  font-family: "Inconsolata", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -475,8 +543,17 @@ article .icon {
   margin-top: 2rem;
 }
 
+.skills-grid {
+  display: grid;
+  /* grid-template-columns: 40% 60%; */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 0rem;
+  margin: auto;
+}
+
 .education-container {
-  height: 100%;
+  padding: 1rem;
+  width: 100%;
   align-items: center;
   margin: auto;
   gap: 1rem;
@@ -484,26 +561,90 @@ article .icon {
   flex-direction: column;
 }
 
-.education-card {
-  gap: 2rem;
-  width: 400px;
-  height: 30vh;
+.education {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  gap: 1rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.list-education {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  flex-wrap: wrap;
+.education .line {
+  padding: 0 0.7rem;
+}
+
+.education .line div {
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  position: relative;
+}
+
+.education-info p {
+  margin: 1rem 0 1rem;
+}
+
+/* The dot on the line */
+.education .line div:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+#working .title-container {
+  margin: auto;
+}
+
+.working-container {
+  padding: 1rem;
+  align-items: center;
+  margin: auto;
   gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.working {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.working .line {
+  padding: 0 0.7rem;
+}
+
+.working .line div {
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  position: relative;
+}
+
+.working-info p {
+  margin: 1rem 0 1rem;
+}
+
+/* The dot on the line */
+.working .line div:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+.working-job {
+  margin-left: 1.2rem;
+  line-height: 2rem;
+  list-style-position: outside;
 }
 
 .project-container {
@@ -576,7 +717,7 @@ article .icon {
   padding: 5rem;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   height: max-content;
 }
 
@@ -626,7 +767,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: relative;
   display: flex;
   justify-content: center;
@@ -699,6 +840,7 @@ textarea {
   transition: 0.3s ease;
   padding: 14px 15px;
   border: 1px solid #69275c;
+  cursor: pointer;
 }
 
 footer {
@@ -713,3 +855,8 @@ footer {
 .copyright {
   margin: auto;
 }
+
+/* Dark Mode */
+
+
+

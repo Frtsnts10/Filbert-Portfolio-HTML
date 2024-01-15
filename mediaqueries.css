@@ -54,68 +54,50 @@
 
   /* h1 */
   .title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3.5rem;
     text-align: center;
   }
 
   .tags {
-    font-family: "Courier Prime", sans-serif;
-    font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
   }
 
   .welcome-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 2rem;
   }
 
   .header-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3rem;
   }
   /* h1 */
 
   /* h2 */
   .logo-title {
-    font-family: "Roboto", serif;
-    font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
     color: #181818;
   }
 
   .card-title {
-    font-family: "Monserrat", serif;
-    font-weight: 600;
     font-size: 2rem;
     text-align: center;
     color: #181818;
   }
 
   .card-description {
-    font-family: "Roboto", serif;
-    font-weight: 400;
     font-size: 1.2rem;
   }
   /* h2 */
 
   /* h3 */
   .header-jobs {
-    font-family: "Roboto", serif;
-    font-weight: 500;
     font-size: 1.4rem;
   }
   /* h3 */
 
   /* h4 */
   .link {
-    font-family: "Roboto", serif;
-    font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
     color: #181818;
@@ -123,8 +105,6 @@
   }
 
   p {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
     font-size: 1.3rem;
   }
   /* h4 */
@@ -176,6 +156,13 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding-top: 6rem;
+  }
+
+  #working {
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   #projects {
@@ -257,7 +244,7 @@
   .container-card {
     margin: 1rem auto;
     width: 340px;
-    height: 30vh;
+    height: 25vh;
     border-radius: 2rem;
     padding: 1rem 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -323,6 +310,58 @@
 
   article .icon {
     cursor: default;
+  }
+
+  #working .title-container {
+    margin: 1rem 1rem;
+  }
+  
+  .working-container {
+    padding: 1rem;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .working {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .working .line {
+    padding: 0 0.7rem;
+  }
+  
+  .working .line div {
+    width: 2px;
+    height: 100%;
+    background: #f1f1f1;
+    position: relative;
+  }
+  
+  .working-info p {
+    margin: 1rem 0 1rem;
+  }
+  
+  /* The dot on the line */
+  .working .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+  }
+  
+  .working-job {
+    margin-left: 1.2rem;
+    line-height: 2rem;
+    list-style-position: outside;
   }
 
   #projects .title-container {
@@ -584,68 +623,50 @@
 
   /* h1 */
   .title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3.5rem;
     text-align: center;
   }
 
   .tags {
-    font-family: "Courier Prime", sans-serif;
-    font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
   }
 
   .welcome-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 2rem;
   }
 
   .header-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3rem;
   }
   /* h1 */
 
   /* h2 */
   .logo-title {
-    font-family: "Roboto", serif;
-    font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
     color: #181818;
   }
 
   .card-title {
-    font-family: "Monserrat", serif;
-    font-weight: 600;
     font-size: 2rem;
     text-align: center;
     color: #181818;
   }
 
   .card-description {
-    font-family: "Roboto", serif;
-    font-weight: 400;
     font-size: 1.2rem;
   }
   /* h2 */
 
   /* h3 */
   .header-jobs {
-    font-family: "Roboto", serif;
-    font-weight: 500;
     font-size: 1.4rem;
   }
   /* h3 */
 
   /* h4 */
   .link {
-    font-family: "Roboto", serif;
-    font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
     color: #181818;
@@ -653,8 +674,6 @@
   }
 
   p {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
     font-size: 1.3rem;
   }
   /* h4 */
@@ -1086,68 +1105,50 @@
 
   /* h1 */
   .title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3.5rem;
     text-align: center;
   }
 
   .tags {
-    font-family: "Courier Prime", sans-serif;
-    font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
   }
 
   .welcome-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 2rem;
   }
 
   .header-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3rem;
   }
   /* h1 */
 
   /* h2 */
   .logo-title {
-    font-family: "Roboto", serif;
-    font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
     color: #181818;
   }
 
   .card-title {
-    font-family: "Monserrat", serif;
-    font-weight: 600;
     font-size: 2rem;
     text-align: center;
     color: #181818;
   }
 
   .card-description {
-    font-family: "Roboto", serif;
-    font-weight: 400;
     font-size: 1.2rem;
   }
   /* h2 */
 
   /* h3 */
   .header-jobs {
-    font-family: "Roboto", serif;
-    font-weight: 500;
     font-size: 1.4rem;
   }
   /* h3 */
 
   /* h4 */
   .link {
-    font-family: "Roboto", serif;
-    font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
     color: #181818;
@@ -1155,8 +1156,6 @@
   }
 
   p {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
     font-size: 1.3rem;
   }
   /* h4 */
@@ -1272,7 +1271,7 @@
   .container-card {
     margin: 1rem auto;
     width: 380px;
-    height: 30vh;
+    height: 25vh;
     border-radius: 2rem;
     padding: 1rem 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -1490,44 +1489,32 @@
 
   /* h1 */
   .title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3.5rem;
     text-align: center;
   }
 
   .tags {
-    font-family: "Courier Prime", sans-serif;
-    font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
   }
 
   .welcome-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 2rem;
   }
 
   .header-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
     font-size: 3rem;
   }
   /* h1 */
 
   /* h2 */
   .logo-title {
-    font-family: "Roboto", serif;
-    font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
     color: #181818;
   }
 
   .card-title {
-    font-family: "Monserrat", serif;
-    font-weight: 600;
     font-size: 2rem;
     text-align: center;
     color: #181818;
@@ -1668,7 +1655,7 @@
   .container-card {
     margin: 1rem auto;
     width: 100%;
-    height: 100%;
+    height: 25vh;
     border-radius: 2rem;
     padding: 1rem 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
