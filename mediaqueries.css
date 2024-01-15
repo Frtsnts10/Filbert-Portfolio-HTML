@@ -201,7 +201,7 @@
   .header-title,
   .header-jobs,
   .hero-description {
-    padding: 0.2rem 1rem;;
+    padding: 0.2rem 1rem;
   }
 
   .dw-btn {
@@ -289,7 +289,7 @@
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-}
+  }
 
   .sub-title {
     margin: 1rem auto;
@@ -316,7 +316,7 @@
   #working .title-container {
     margin: 1rem 1rem;
   }
-  
+
   .working-container {
     padding: 1rem;
     align-items: center;
@@ -325,29 +325,29 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .working {
     display: flex;
     gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  
+
   .working .line {
     padding: 0 0.7rem;
   }
-  
+
   .working .line div {
     width: 2px;
     height: 100%;
     background: #f1f1f1;
     position: relative;
   }
-  
+
   .working-info p {
     margin: 1rem 0 1rem;
   }
-  
+
   /* The dot on the line */
   .working .line div:before {
     content: "";
@@ -358,7 +358,7 @@
     position: absolute;
     left: -6px;
   }
-  
+
   .working-job {
     margin-left: 1.2rem;
     line-height: 2rem;
@@ -413,11 +413,6 @@
   .card-top {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .project-title {
-    text-align: center;
-    margin: 1rem;
   }
 
   .badge {
@@ -628,8 +623,8 @@
   .title-container,
   .hero-description,
   .working-container,
-  .project-container{
-    padding: 0.2rem 0rem ;
+  .project-container {
+    padding: 0.2rem 0rem;
   }
 
   /* h1 */
@@ -844,7 +839,7 @@
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-}
+  }
 
   .sub-title {
     margin: 1rem auto;
@@ -915,10 +910,6 @@
     padding-bottom: 1rem;
   }
 
-  .project-title {
-    text-align: center;
-    margin: 1rem;
-  }
 
   .badge {
     text-align: center;
@@ -975,7 +966,7 @@
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.2rem solid;
     border-color: rgb(163, 163, 163);
-    height: max-content;
+    height: 380px;
     padding: 1rem;
     margin: auto;
     margin-top: 2rem;
@@ -1308,7 +1299,7 @@
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-}
+  }
 
   .list-experience {
     display: grid;
@@ -1353,12 +1344,7 @@
     padding-bottom: 1rem;
   }
 
-  .project-title {
-    text-align: center;
-    margin: 1rem;
-  }
-
-  .project-container{
+  .project-container {
     padding: 0;
   }
 
@@ -1477,7 +1463,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 400px) and (max-width: 500px) {
   /* ======= Initial ======= */
   .desktop-nav {
     display: none;
@@ -1502,7 +1488,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   /* h1 */
   .title {
     font-size: 3.5rem;
@@ -1623,8 +1609,11 @@
   .welcome-text,
   .header-title,
   .header-jobs,
-  .hero-description {
-    padding: 0.2rem 0;
+  .title-container,
+  .hero-description,
+  .working-container,
+  .project-container {
+    padding: 0.2rem 0rem;
   }
 
   .dw-btn {
@@ -1667,7 +1656,7 @@
 
   .container-card {
     margin: 1rem auto;
-    width: 100%;
+    width: 320px;
     height: max-content;
     border-radius: 2rem;
     padding: 1rem 1rem;
@@ -1700,8 +1689,8 @@
 
   .experience-card {
     gap: 2rem;
-    width: 380px;
-    height: 250px;
+    width: 320px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1716,7 +1705,7 @@
 
   .list-experience {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
     flex-wrap: wrap;
     gap: 1rem;
@@ -1779,18 +1768,14 @@
 
   #working {
     justify-content: center;
+    width: 100%;
   }
-  
+
   .working-container {
     padding: 0;
   }
 
-  .project-title {
-    text-align: center;
-    margin: 1rem;
-  }
-
-  .project-container{
+  .project-container {
     padding: 0;
   }
 
@@ -1922,4 +1907,3 @@
     padding-bottom: 1rem;
   }
 }
-

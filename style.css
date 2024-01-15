@@ -674,7 +674,10 @@ article .icon {
 
 .project-title {
   text-align: center;
-  margin: 1rem;
+  margin: 1rem auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .badge {
@@ -700,18 +703,13 @@ article .icon {
   text-align: center;
 }
 
-.flutter {
+.flutter,
+.html {
   background-color: blue;
 }
 
-.c_plus {
-  background-color: red;
-}
-
-.nextjs {
-  background-color: red;
-}
-
+.c_plus,
+.nextjs,
 .typescript {
   background-color: red;
 }
