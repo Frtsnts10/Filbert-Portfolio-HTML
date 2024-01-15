@@ -1521,7 +1521,6 @@
   }
 
   .card-description {
-    font-family: "Roboto", serif;
     font-weight: 400;
     font-size: 1.2rem;
   }
@@ -1529,7 +1528,6 @@
 
   /* h3 */
   .header-jobs {
-    font-family: "Roboto", serif;
     font-weight: 500;
     font-size: 1.4rem;
   }
@@ -1537,7 +1535,6 @@
 
   /* h4 */
   .link {
-    font-family: "Roboto", serif;
     font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
@@ -1546,7 +1543,6 @@
   }
 
   p {
-    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 1.3rem;
   }
