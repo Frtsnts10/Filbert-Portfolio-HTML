@@ -622,6 +622,16 @@
     box-sizing: border-box;
   }
 
+  .welcome-text,
+  .header-title,
+  .header-jobs,
+  .title-container,
+  .hero-description,
+  .working-container,
+  .project-container{
+    padding: 0.2rem 0rem ;
+  }
+
   /* h1 */
   .title {
     font-size: 3.5rem;
@@ -814,7 +824,7 @@
 
   .experience-container {
     width: 100%;
-    padding: 2rem;
+    padding: 0;
     align-items: center;
     gap: 1rem;
     display: flex;
@@ -1348,6 +1358,10 @@
     margin: 1rem;
   }
 
+  .project-container{
+    padding: 0;
+  }
+
   .badge {
     text-align: center;
     display: flex;
@@ -1489,7 +1503,6 @@
     flex-direction: column;
   }
   
-
   /* h1 */
   .title {
     font-size: 3.5rem;
@@ -1611,7 +1624,7 @@
   .header-title,
   .header-jobs,
   .hero-description {
-    padding: 1rem 0;
+    padding: 0.2rem 0;
   }
 
   .dw-btn {
@@ -1678,7 +1691,7 @@
 
   .experience-container {
     width: max-content;
-    padding: 1rem;
+    padding: 0;
     align-items: center;
     gap: 1rem;
     display: flex;
@@ -1731,6 +1744,7 @@
     height: 100%;
     align-items: center;
     margin: auto;
+    padding: 0;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -1774,6 +1788,10 @@
   .project-title {
     text-align: center;
     margin: 1rem;
+  }
+
+  .project-container{
+    padding: 0;
   }
 
   .badge {
