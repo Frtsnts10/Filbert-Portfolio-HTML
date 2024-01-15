@@ -141,7 +141,7 @@
     min-height: 92vh;
     position: relative;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     padding-top: 4rem;
   }
 
@@ -201,7 +201,7 @@
   .header-title,
   .header-jobs,
   .hero-description {
-    padding: 1rem 1rem;
+    padding: 0.2rem 1rem;;
   }
 
   .dw-btn {
@@ -230,12 +230,13 @@
   }
 
   .about-container img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 100%;
   }
 
   .container {
+    width: max-content;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem 1rem;
@@ -243,8 +244,8 @@
 
   .container-card {
     margin: 1rem auto;
-    width: 340px;
-    height: 25vh;
+    width: 380px;
+    height: max-content;
     border-radius: 2rem;
     padding: 1rem 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -284,11 +285,11 @@
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-  }
+}
 
   .sub-title {
     margin: 1rem auto;
@@ -460,7 +461,7 @@
 
   .swiper {
     width: 100%;
-    height: max-content;
+    height: 450px;
     padding: 5rem;
   }
 
@@ -528,7 +529,7 @@
     position: relative;
     margin: auto;
     padding: 2rem;
-    width: 700px;
+    width: 600px;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
   }
@@ -599,7 +600,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 991px) {
   /* ======= Initial ======= */
 
   .desktop-nav {
@@ -717,9 +718,8 @@
   #education {
     min-height: 100vh;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
     padding-top: 6rem;
   }
 
@@ -740,13 +740,6 @@
     width: 400px;
     height: 400px;
     border-radius: 100%;
-  }
-
-  .welcome-text,
-  .header-title,
-  .header-jobs,
-  .hero-description {
-    padding: 1rem 1rem;
   }
 
   .dw-btn {
@@ -775,12 +768,13 @@
   }
 
   .about-container img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 100%;
   }
 
   .container {
+    width: max-content;
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem;
@@ -789,7 +783,7 @@
   .container-card {
     margin: 1rem auto;
     width: 360px;
-    height: 100%;
+    height: max-content;
     border-radius: 2rem;
     padding: 1rem 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -836,11 +830,11 @@
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-  }
+}
 
   .sub-title {
     margin: 1rem auto;
@@ -863,6 +857,7 @@
   }
 
   .education-container {
+    padding: 0;
     order: 1;
     height: 100%;
     align-items: center;
@@ -956,7 +951,7 @@
 
   .swiper {
     width: 100%;
-    height: max-content;
+    height: 450px;
     padding: 5rem;
   }
 
@@ -1024,7 +1019,7 @@
     position: relative;
     margin: auto;
     padding: 2rem;
-    width: 700px;
+    width: 600px;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
   }
@@ -1082,9 +1077,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 767px) {
   /* ======= Initial ======= */
-  desktop-nav {
+  .desktop-nav {
     display: none;
   }
 
@@ -1224,13 +1219,6 @@
     border-radius: 100%;
   }
 
-  .welcome-text,
-  .header-title,
-  .header-jobs,
-  .hero-description {
-    padding: 1rem 1rem;
-  }
-
   .dw-btn {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1257,8 +1245,8 @@
   }
 
   .about-container img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 100%;
   }
 
@@ -1271,7 +1259,7 @@
   .container-card {
     margin: 1rem auto;
     width: 380px;
-    height: 25vh;
+    height: max-content;
     border-radius: 2rem;
     padding: 1rem 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -1289,8 +1277,8 @@
   }
 
   .experience-container {
-    width: 100%;
-    padding: 2rem;
+    width: max-content;
+    padding: 1rem;
     align-items: center;
     gap: 1rem;
     display: flex;
@@ -1299,18 +1287,18 @@
 
   .experience-card {
     gap: 2rem;
-    width: 400px;
+    width: 380px;
     height: 250px;
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-  }
+}
 
   .list-experience {
     display: grid;
@@ -1345,7 +1333,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 2rem;
-    width: 100%;
+    width: 600px;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
   }
@@ -1400,8 +1388,8 @@
   }
 
   .swiper {
-    width: 100%;
-    height: max-content;
+    width: 400px;
+    height: 450px;
     padding: 5rem;
   }
 
@@ -1464,11 +1452,20 @@
     border-radius: 25px;
     background: #777;
   }
+
+  .contact-container {
+    position: relative;
+    margin: auto;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   /* ======= Initial ======= */
-  desktop-nav {
+  .desktop-nav {
     display: none;
   }
 
@@ -1486,6 +1483,12 @@
     align-items: center;
     box-sizing: border-box;
   }
+
+  #education {
+    display: flex;
+    flex-direction: column;
+  }
+  
 
   /* h1 */
   .title {
@@ -1608,7 +1611,7 @@
   .header-title,
   .header-jobs,
   .hero-description {
-    padding: 1rem 1rem;
+    padding: 1rem 0;
   }
 
   .dw-btn {
@@ -1646,12 +1649,13 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem 0;
   }
 
   .container-card {
     margin: 1rem auto;
     width: 100%;
-    height: 25vh;
+    height: max-content;
     border-radius: 2rem;
     padding: 1rem 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -1673,10 +1677,9 @@
   }
 
   .experience-container {
-    height: 100%;
-    padding: 0;
+    width: max-content;
+    padding: 1rem;
     align-items: center;
-    margin: auto;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -1684,13 +1687,15 @@
 
   .experience-card {
     gap: 2rem;
-    width: 100%;
-    height: 100%;
+    width: 380px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
@@ -1698,7 +1703,7 @@
 
   .list-experience {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     flex-wrap: wrap;
     gap: 1rem;
@@ -1711,7 +1716,7 @@
   }
 
   article {
-    margin: 1rem;
+    /* margin: auto; */
     display: flex;
     text-align: start;
     gap: 0.5rem;
@@ -1756,6 +1761,14 @@
   .card-top {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  #working {
+    justify-content: center;
+  }
+  
+  .working-container {
+    padding: 0;
   }
 
   .project-title {
@@ -1891,3 +1904,4 @@
     padding-bottom: 1rem;
   }
 }
+
