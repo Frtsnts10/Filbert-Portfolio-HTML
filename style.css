@@ -367,7 +367,7 @@ p {
   margin: auto;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 35% 65%;
 }
 
 #projects {
@@ -550,7 +550,8 @@ article .icon {
 .skills-grid {
   display: grid;
   /* grid-template-columns: 40% 60%; */
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
   gap: 0rem;
   margin: auto;
 }
